@@ -1,4 +1,3 @@
-// src/contexts/employee/domain/employee.entity.ts
 import { EmployeeId } from './value-objects/employee-id';
 import { Name } from './value-objects/name';
 import { Email } from './value-objects/email';
