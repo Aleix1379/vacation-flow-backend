@@ -7,7 +7,13 @@ export class Department {
   }
 
   private ensureIsValid(value: string): void {
-    const validDepartments = ['HR', 'Development', 'Marketing', 'Sales'];
+    const validDepartments = [
+      'HR',
+      'Development',
+      'Marketing',
+      'Sales',
+      'Engineering',
+    ];
     if (!validDepartments.includes(value)) {
       throw new Error(`Invalid department: ${value}`);
     }

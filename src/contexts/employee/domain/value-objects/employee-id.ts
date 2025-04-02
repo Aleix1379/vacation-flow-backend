@@ -14,4 +14,13 @@ export class EmployeeId {
   equals(other: EmployeeId): boolean {
     return this.value === other.getValue();
   }
+
+  // Additional helpful methods
+  static generate(): EmployeeId {
+    return new EmployeeId();
+  }
+
+  static fromString(value: string): EmployeeId {
+    return new EmployeeId(value);
+  }
 }
