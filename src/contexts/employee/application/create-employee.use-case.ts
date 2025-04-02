@@ -17,8 +17,9 @@ export class CreateEmployeeUseCase {
 
       return await this.employeeRepository.create(employee);
     } catch (error) {
-      // Convert domain errors to application-specific errors
-      throw new CreateEmployeeError(error.message);
+      const errorMessage =
+        error instanceof Error ? error.message : 'Unknown error occurred';
+      throw new CreateEmployeeError(errorMessage);
     }
   }
 }
