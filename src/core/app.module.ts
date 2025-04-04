@@ -13,7 +13,7 @@ import { EmployeeModule } from '../contexts/employee/employee.module';
       username: process.env.DB_USERNAME || 'postgres',
       password: process.env.DB_PASSWORD || 'password',
       database: process.env.DB_NAME || 'vacation_flow',
-      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      entities: [__dirname + '/../**/*.schema{.ts,.js}'],
       synchronize: true,
     }),
     EmployeeModule,
