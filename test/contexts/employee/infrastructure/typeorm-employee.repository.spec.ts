@@ -1,10 +1,9 @@
-// test/contexts/employee/infrastructure/typeorm-employee.repository.spec.ts
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { TypeOrmEmployeeRepository } from '../../../../src/contexts/employee/infrastructure/typeorm-employee.repository';
 import {
   EmployeeSchema,
-  TypeOrmEmployeeModel,
+  TypeOrmEmployee,
 } from '../../../../src/contexts/employee/infrastructure/typeorm-employee.schema';
 import { Employee } from '../../../../src/contexts/employee/domain/employee.entity';
 
@@ -54,11 +53,11 @@ describe('TypeOrmEmployeeRepository', () => {
         name: 'John Doe',
         email: 'john@example.com',
         department: 'HR',
-      } as TypeOrmEmployeeModel);
+      } as TypeOrmEmployee);
     });
 
     it('should return domain entity with saved data', async () => {
-      const testData: TypeOrmEmployeeModel = {
+      const testData: TypeOrmEmployee = {
         // Explicitly typed
         id: '12345',
         name: 'John Doe',

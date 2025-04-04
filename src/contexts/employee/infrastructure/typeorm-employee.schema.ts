@@ -1,14 +1,14 @@
 import { EntitySchema } from 'typeorm';
 import { Employee } from '../domain/employee.entity';
 
-export interface TypeOrmEmployeeModel {
+export interface TypeOrmEmployee {
   id: string;
   name: string;
   email: string;
   department: string;
 }
 
-export const EmployeeSchema = new EntitySchema<TypeOrmEmployeeModel>({
+export const EmployeeSchema = new EntitySchema<TypeOrmEmployee>({
   name: 'Employee',
   target: Employee,
   columns: {

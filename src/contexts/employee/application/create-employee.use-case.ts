@@ -1,11 +1,15 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Inject } from '@nestjs/common';
 import { EmployeeRepository } from '../domain/employee.repository';
 import { Employee } from '../domain/employee.entity';
 import { CreateEmployeeDto } from '../infrastructure/dto/create-employee.dto';
+import { EMPLOYEE_REPOSITORY } from '../employee.constants';
 
 @Injectable()
 export class CreateEmployeeUseCase {
-  constructor(private readonly employeeRepository: EmployeeRepository) {}
+  constructor(
+    @Inject(EMPLOYEE_REPOSITORY)
+    private readonly employeeRepository: EmployeeRepository,
+  ) {}
 
   async execute(dto: CreateEmployeeDto): Promise<Employee> {
     try {
