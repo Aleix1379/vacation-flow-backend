@@ -1,12 +1,12 @@
 import { Test } from '@nestjs/testing';
-import { EmployeeController } from '../../../../../src/contexts/employee/infrastructure/controllers/employee.controller';
+import { EmployeeController } from '@employee/infrastructure/controllers/employee.controller';
 import {
   CreateEmployeeUseCase,
   CreateEmployeeError,
-} from '../../../../../src/contexts/employee/application/create-employee.use-case';
-import { Employee } from '../../../../../src/contexts/employee/domain/employee.entity';
-import { Department } from '../../../../../src/contexts/employee/domain/value-objects/department';
-import { CreateEmployeeDto } from '../../../../../src/contexts/employee/infrastructure/dto/create-employee.dto';
+} from '@employee/application/create-employee.use-case';
+import { Employee } from '@employee/domain/employee.entity';
+import { Department } from '@employee/domain/value-objects/department';
+import { CreateEmployeeDto } from '@employee/infrastructure/dto/create-employee.dto';
 
 class MockCreateEmployeeUseCase {
   execute = jest.fn<Promise<Employee>, [CreateEmployeeDto]>();

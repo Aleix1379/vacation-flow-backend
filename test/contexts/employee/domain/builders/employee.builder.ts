@@ -1,4 +1,4 @@
-import { Employee } from '../../../../../src/contexts/employee/domain/employee.entity';
+import { Employee } from '@employee/domain/employee.entity';
 
 interface EmployeeData {
   id: string;

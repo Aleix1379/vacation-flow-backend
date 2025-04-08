@@ -1,4 +1,4 @@
-import { Name } from '../../../../../src/contexts/employee/domain/value-objects/name';
+import { Name } from '@employee/domain/value-objects/name';
 
 describe('Name', () => {
   it('should create a valid name', () => {

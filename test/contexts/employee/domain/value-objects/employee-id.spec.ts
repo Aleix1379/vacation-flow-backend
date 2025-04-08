@@ -1,4 +1,4 @@
-import { EmployeeId } from '../../../../../src/contexts/employee/domain/value-objects/employee-id';
+import { EmployeeId } from '@employee/domain/value-objects/employee-id';
 
 describe('EmployeeId', () => {
   it('should generate a unique ID if none is provided', () => {

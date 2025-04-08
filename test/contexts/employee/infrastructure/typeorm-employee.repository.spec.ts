@@ -1,11 +1,11 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { TypeOrmEmployeeRepository } from '../../../../src/contexts/employee/infrastructure/typeorm-employee.repository';
+import { TypeOrmEmployeeRepository } from '@employee/infrastructure/typeorm-employee.repository';
 import {
   EmployeeSchema,
   TypeOrmEmployee,
-} from '../../../../src/contexts/employee/infrastructure/typeorm-employee.schema';
-import { Employee } from '../../../../src/contexts/employee/domain/employee.entity';
+} from '@employee/infrastructure/typeorm-employee.schema';
+import { Employee } from '@employee/domain/employee.entity';
 
 describe('TypeOrmEmployeeRepository', () => {
   let repository: TypeOrmEmployeeRepository;

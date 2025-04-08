@@ -1,4 +1,4 @@
-import { Department } from '../../../../../src/contexts/employee/domain/value-objects/department';
+import { Department } from '@employee/domain/value-objects/department';
 
 describe('Department', () => {
   it('should create a valid department', () => {

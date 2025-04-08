@@ -1,4 +1,4 @@
-import { Email } from '../../../../../src/contexts/employee/domain/value-objects/email';
+import { Email } from '@employee/domain/value-objects/email';
 
 describe('Email', () => {
   it('should create a valid email', () => {

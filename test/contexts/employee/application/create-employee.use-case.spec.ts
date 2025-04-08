@@ -2,10 +2,10 @@ import { Test, TestingModule } from '@nestjs/testing';
 import {
   CreateEmployeeError,
   CreateEmployeeUseCase,
-} from '../../../../src/contexts/employee/application/create-employee.use-case';
-import { CreateEmployeeDto } from '../../../../src/contexts/employee/infrastructure/dto/create-employee.dto';
-import { Employee } from '../../../../src/contexts/employee/domain/employee.entity';
-import { EMPLOYEE_REPOSITORY } from '../../../../src/contexts/employee/employee.constants';
+} from '@employee/application/create-employee.use-case';
+import { CreateEmployeeDto } from '@employee/infrastructure/dto/create-employee.dto';
+import { Employee } from '@employee/domain/employee.entity';
+import { EMPLOYEE_REPOSITORY } from '@employee/employee.constants';
 import { EmployeeBuilder } from '../domain/builders/employee.builder';
 
 describe('CreateEmployeeUseCase', () => {

@@ -10,6 +10,14 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@employee/*": ["src/contexts/employee/*"],
+      "@shared/*": ["src/shared/*"],
+      "@test/*": ["test/*"]
+    },
+    "moduleResolution": "node",
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,

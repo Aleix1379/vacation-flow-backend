@@ -1,4 +1,4 @@
-import { validateEnv } from '../../src/config/env.validation';
+import { validateEnv } from '@app/config/env.validation';
 
 describe('validateEnv', () => {
   beforeEach(() => {

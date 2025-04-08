@@ -1,5 +1,5 @@
-import { Employee } from '../../../../src/contexts/employee/domain/employee.entity';
-import { EmployeeId } from '../../../../src/contexts/employee/domain/value-objects/employee-id';
+import { Employee } from '@employee/domain/employee.entity';
+import { EmployeeId } from '@employee/domain/value-objects/employee-id';
 
 describe('Employee', () => {
   const validProps = {
